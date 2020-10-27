@@ -1,0 +1,79 @@
+/* pages/share/share.wxss */
+.content {
+  height: 1600rpx;
+  border: none;
+  background: #EAF0F0
+}
+
+/* 预约详情 */
+
+
+.backindex {
+  display: flex;
+  height: 80rpx;
+  background: white
+}
+
+.backindex image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 8rpx
+}
+
+.backindex view {
+  line-height: 60rpx;
+  margin-left: 40rpx;
+  font-weight: bold;
+  font-size: 36rpx
+}
+
+/* 详情 */
+.content-body2 {
+  margin-top: 6rpx;
+  text-align: center;
+  background: white;
+  height: 200rpx
+}
+
+.content-body2 :nth-child(1) {
+  font-size: 40rpx;
+  padding-top: 20rpx;
+  font-weight: bold
+}
+
+.content-body2 :nth-child(2),
+.content-body2 :nth-child(3) {
+  font-size: 30rpx;
+  color: #CED8DC
+}
+
+/* 弹窗 */
+.content-body3 {
+  width: 80%;
+  height: 350rpx;
+  border: 1px solid white;
+  margin: 240rpx auto;
+  background: white
+}
+
+.cb-all {
+  margin-top: 20rpx;
+  padding-left: 30rpx;
+}
+
+.cb-all view {
+  font-size: 30rpx
+}
+
+.cb-all view text {
+  color: #48A5FF
+}
+
+.cb-all1 {
+  width: 300rpx;
+
+  text-align: center;
+
+  background-color:#48A5FF;
+  color:white;margin:60rpx auto
+}

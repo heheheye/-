@@ -1,0 +1,234 @@
+/* ----------页面顶部区域------------ */
+.content {
+  height: 2125rpx;
+  border: none;
+
+}
+
+.content-body1 {
+  height: 242rpx;
+
+}
+
+.backindex {
+  display: flex;
+  height: 60rpx;
+  border-bottom: 1px solid gray;
+}
+
+.backindex image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 8rpx
+}
+
+.backindex view {
+  line-height: 60rpx;
+  margin-left: 40rpx;
+  font-weight: bold;
+  font-size: 36rpx
+}
+
+/* 会议室 */
+.cb1-content {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  margin-top: 20rpx;
+  border-bottom: 1px solid #6C8998
+}
+
+.cb1-content image {
+  width: 200rpx;
+  height: 140rpx;
+  margin-left: 20rpx
+}
+
+.cb1-right {
+  width: 80%;
+  height: 140rpx;
+  margin-left: 20rpx
+}
+
+.cb1-right :nth-child(1) {
+  font-size: 34rpx;
+  margin-top: 20rpx;
+  font-weight: bolder
+}
+
+.cb1-right :nth-child(2) {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  color: #6C8998
+}
+
+/* ----------------页面主要功能显示区--------- */
+/* 选项卡 */
+.content-body2 {
+  height: 1780rpx;
+
+
+}
+
+/*  */
+.page {
+  height: 1750rpx;
+}
+
+.tab-content {
+  height: 1710rpx;
+  background: #EAF0F0;
+}
+
+/* 调显示区域 -------------------------------*/
+.weui-tabs-swiper {
+  height: 1700rpx;
+}
+
+/* 调间距-------------------------------------------------------- */
+.weui-tabs-bar__item {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.weui-tabs-bar__wrp {
+  width: 100%;
+  background: #fff;
+  height: 80rpx;
+  line-height: 73rpx;
+}
+
+
+/*底部 */
+.content-body3 {
+  width: 100%;
+  height: 80rpx;
+  margin-top: 20rpx;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #FE2C83;
+  color: white
+}
+
+/* 修改的css */
+.displayarea {
+  padding-top: 70rpx
+}
+
+.da-title {
+  font-size: 36rpx;
+  margin-left: 15rpx
+}
+
+.part {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30rpx
+}
+
+.part-s {
+  width: 28%;
+  height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  margin-top: 30rpx;
+  margin-left: 4%;
+  color:#878787;
+  background: #ffffff
+    /* 初始状态白底黑色壳点击 */
+}
+
+.partz {
+  background: #FE2C83;
+  color: white
+}
+.party {
+  background:#E0E9E8;
+  color:  white
+}
+.partx{
+  background:blue !important;
+  color:  #EAF0F0
+}
+
+
+/*  */
+/**index.wxss**/
+/* 外面的按钮 */
+ 
+/* 遮罩层 */
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 9000;
+    opacity: 0.5;
+}
+ 
+/* 弹出层 */
+.modalDlg{
+    width: 70%;
+    position: fixed;
+    top: 400rpx;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius:10rpx;
+    display:flex;
+    flex-direction: column;
+  
+}
+ 
+/* 弹出层里面的图片 */
+
+ .msg{
+   margin-left:10rpx;
+   height:70rpx;
+   background:#F8F8F8;
+   line-height:70rpx
+ }
+ .msg1{
+  margin-left:10rpx;
+  height:140rpx;
+  line-height:140rpx
+}
+/* 弹出层里面的按钮 */
+.tank{
+  display:flex;
+  margin-bottom:20rpx
+}
+.ok{
+  width: 80px;
+  height: 70rpx;
+  background: #1E9EFF;
+  line-height: 70rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;  
+  margin-left:140rpx
+}
+.ok2{
+  width: 80px;
+  height: 70rpx;
+  background: #1E9EFF;
+  line-height: 70rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;  
+  margin-left:20rpx
+}
+ 
+
+
+
+
+
+

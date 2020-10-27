@@ -1,0 +1,41 @@
+<view class="container">
+  <!-- 上部加轮播图 -->
+  <view class="content-body1">
+    <view class="cb1-head">
+      <view class="cb1-head1">好租</view>
+      <view class="cb1-head2"></view>
+      <view class="cb1-head3">共享办公室</view>
+    </view>
+    <!-- swiper -->
+    <view class="page-body">
+      <view class="page-section page-section-spacing swiper">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+          indicator-color="#A5CCE8" indicator-active-color="white" duration="{{duration}}">
+          <block wx:for="{{banner}}" wx:key="id">
+            <swiper-item>
+              <image src="http://huiyi.mb.cjsit.cn/{{item.src}}" class="swiperimage">
+              </image>
+
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+    <view class="Sharedmeetingroom">
+      共享会议室
+    </view>
+  </view>
+  <!-- 主要内容 -->
+  <view class="content-body2">
+    <view class="cb2" wx:for="{{goods}}" wx:key="index" data-id="{{item.id}}" bindtap="go" data-index="{{index}}">
+      <!-- 带参数跳转到子页面，显示图片，基本信息 -->
+      <image src="http://huiyi.mb.cjsit.cn/{{item.cover_zhong}}" ></image>
+      <view class="right">
+        <view>{{item.title}}</view>
+        <view>{{item.loucheng}}</view>
+        <view>{{item.dizi}}</view>
+      </view>
+    </view>
+  </view>
+ 
+</view>

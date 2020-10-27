@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="content">
+    <view class="content-body1">
+      <!-- 返回上一级 -->
+      <view class="backindex">
+        <navigator url="/pages/Appin/Appin" hover-class="other-navigator-hover">
+          <image src="../../static/bottomicon/fanhui.png"></image>
+        </navigator>
+        <view>分享详情</view>
+      </view>
+    </view>
+    <view class="content-body2">
+      <view>{{gm}}</view>
+      <view> 所属大厦：祈福5-6楼</view>
+      <view> 地址：祈福集团5-6楼</view>
+    </view>
+  
+    <view class="content-body3">
+        <view class="cb-all" >
+          <view>预定时间：{{kaitime}}</view>
+          <view>预定结束时间：{{guantime}}</view>
+          <view>申请时间：{{order}}</view>
+          <view>申请人：{{namea}}</view>
+          <view>状态：<text>{{stat}}</text></view>
+        </view>
+        <button class="cb-all1" open-type="share">
+          分享
+        </button>
+    </view>
+  </view>
+</view>

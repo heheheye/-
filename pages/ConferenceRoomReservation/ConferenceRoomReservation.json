@@ -1,0 +1,13 @@
+{
+
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "会议室预定",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+
+    "usingComponents": {
+        "mp-tabs": "../../miniprogram_npm/@miniprogram-component-plus/tabs/index"
+    }
+
+}

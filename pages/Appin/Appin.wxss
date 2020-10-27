@@ -1,0 +1,164 @@
+/* pages/Appin/Appin.wxss */
+.content {
+  height: 1600rpx;
+  border: none;
+
+}
+
+/* 预约详情 */
+
+
+.backindex {
+  display: flex;
+  height: 60rpx;
+
+}
+
+.backindex image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 8rpx
+}
+
+.backindex view {
+  line-height: 60rpx;
+  margin-left: 40rpx;
+  font-weight: bold;
+  font-size: 36rpx
+}
+
+.commona {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+
+
+}
+.common {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+
+
+}
+
+.commona view {
+
+  height: 90rpx;
+  font-size: rpx;
+  line-height: 90rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.right {
+  text-align: right;
+  width: 48%;
+  padding-right: 10rpx;
+
+}
+
+.left {
+  width: 64%;
+  padding-left: 10rpx;
+}
+
+
+
+.add {
+  border-top: 3px solid #EAF0F0;
+  height: 200rpx
+}
+
+.add view {
+  margin-top: 100rpx;
+  width: 50%;
+  text-align: center;
+  color: white
+}
+
+.addleft {
+  background: #1E9EFF
+}
+
+.addright {
+  background: #FE5722
+}
+.addcenter{
+  background:#90A4AE
+}
+
+
+
+.btn{
+  width: 80px;
+  height: 35px;
+  background: #44b549;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  margin:20px auto;
+  border-radius: 100px; 
+}
+ 
+/* 遮罩层 */
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 9000;
+    opacity: 0.5;
+}
+ 
+/* 弹出层 */
+.modalDlg{
+  width: 70%;
+  position: fixed;
+  top: 400rpx;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius:10rpx;
+  display:flex;
+  flex-direction: column;
+}
+
+ 
+/* 弹出层里面的图片 */
+
+/* 弹出层里面的按钮 */
+.ok{
+  width: 80px;
+  height: 35px;
+  background: #1E9EFF;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  margin:20px auto;
+  
+}
+ 
+/* 弹出层里面的文字 */
+.viewa{
+  width:100%;
+  height:100rpx;
+  color: #666;
+/*   width: 200rpx; */
+  margin-top: 10px;
+  line-height:100rpx;text-align:center
+}
+.viewb{display:flex;justify-content: space-around;}

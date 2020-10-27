@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="content">
+    <!-- 头部个人信息 -->
+    <view class="cb1">
+      <!-- <view class="cb1-body">
+        <image src="../../static/swiper.png"></image>
+        <view>
+          琴景胜
+        </view>
+      </view> -->
+      <view class="cb1-body">
+
+        <view class="headIcon">
+          <image src="{{portrait}}"></image>
+        </view>
+        <view class="login" style="font-size：40rpx;color:#c1c1c1;margin-top:10rpx">
+          {{nickname}}
+        </view>
+        <button class="button" open-type="getUserInfo" wx:if="{{hasUserInfo}}" bindgetuserinfo="doAuthorization"> 微信登录
+        </button>
+
+      </view>
+
+    </view>
+    <!-- 跳转二级接口 -->
+    <view class="cb2">
+      <view class='index' bindtap="Dataperfection">
+        <view class="iconfont icon-ziliaoguanli "> 资料完善</view>
+        <view class="iconfont icon-dayufuhao"></view>
+      </view>
+      <view class='index' bindtap="SubscribeList">
+        <view class="iconfont icon-yuyue"> 预约管理</view>
+        <view class="iconfont icon-dayufuhao"></view>
+      </view>
+      <view class='index'>
+        <view class="iconfont icon-kefu "> 客服电话</view>
+        <view class="iconfont icon-dayufuhao"></view>
+      </view>
+     <!--  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">电话</button> -->
+    </view>
+  </view>
+</view>

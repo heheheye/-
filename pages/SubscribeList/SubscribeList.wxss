@@ -1,0 +1,52 @@
+/* pages/SubscribeList/SubscribeList.wxss */
+.content {
+  height: 2125rpx;
+  border: none;
+
+}
+
+
+
+.backindex {
+  display: flex;
+  height: 60rpx;
+  border-bottom: 1px solid gray;
+}
+
+.backindex image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 8rpx
+}
+
+.backindex view {
+  line-height: 60rpx;
+  margin-left: 40rpx;
+  font-size: 36rpx
+}
+
+.content-body2 {
+
+  margin-top: 20rpx
+}
+
+.menu {
+  width: 94%;
+  margin: 0 auto;
+  border: 1px solid white;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  box-shadow:2px 2px 2px 2px  #DFDFDF
+}
+
+.menu>view {
+  padding-left: 20rpx
+}
+
+.menu-last {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px dotted #E1E1E1;
+  width: 90%;
+  margin: 20rpx auto
+}

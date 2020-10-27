@@ -1,0 +1,34 @@
+<!--pages/SubscribeList/SubscribeList.wxml-->
+<view class="container">
+  <view class="content">
+    <!-- 页面顶部内容显示区 -->
+    <view class="content-body1">
+      <!-- 返回上一级 -->
+      <view class="backindex">
+        <navigator url="/pages/mine/mine" open-type="switchTab" hover-class="other-navigator-hover">
+          <image src="../../static/bottomicon/fanhui.png"></image>
+        </navigator>
+        <view>预约列表</view>
+      </view>
+    </view>
+    <view class="content-body2">
+      <view class="menu" wx:for="{{list}}" wx:key="index" wx:index="index"
+      >
+        <view style="margin-top:20rpx">会议室名称：{{item.good_name}}</view>
+        <view>预定时间：{{item.kai}}</view>
+        <view bindtap="xx">结束时间：{{item.guan}}</view>
+        <view>会申请人：{{item.name}}</view>
+        <view>申请时间：{{item.time}}</view>
+        <view class="menu-last">
+          <view>
+            <text>状态:</text>
+            <text style="color:#EF9979;margin-left:10rpx">{{item.stat}}</text>
+          </view>
+          <!-- 跳转到详情 -->
+          <view style="color:#40B8E4" bindtap="go"  data-id="{{item.id}}">详情
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

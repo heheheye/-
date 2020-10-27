@@ -1,0 +1,154 @@
+<!--pages/Appin/Appin.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="content-body1">
+      <!-- 返回上一级 -->
+      <view class="backindex">
+        <navigator url="/pages/SubscribeList/SubscribeList" hover-class="other-navigator-hover">
+          <image src="../../static/bottomicon/fanhui.png"></image>
+        </navigator>
+        <view>预约详情</view>
+      </view>
+    </view>
+
+    <view style=" border: 2px solid #EAF0F0">
+      <view class="commona" style="border-top:1px solid #EAF0F0;border:{{item.border}}">
+        <view class="left">姓名(Name)</view>
+        <view class="right" style="color:{{item.color}}">
+          {{namea}}
+        </view>
+      </view>
+      <view class="commona" style="border-top:1px solid #EAF0F0;border-bottom:2px solid #EAF0F0">
+        <view class="left">下单时间(Order up)</view>
+        <view class="right" style="color:{{item.color}}">
+          {{order}}
+        </view>
+      </view>
+      <!-- 负责人资料 -->
+      <view class="commona" style="border-top:1px solid #EAF0F0">
+        <view class="left">负责人资料(Contact Person)</view>
+        <view class="right">
+        </view>
+      </view>
+      <view>
+        <view class="commona" style="color:#99A5AA;border-top:1px solid #D3D9DC">
+          <view class="left">
+            姓名(name)
+          </view>
+          <view class="right">
+            {{namea}}
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="commona" style="color:#99A5AA;border-top:1px solid #D3D9DC">
+          <view class="left">
+            电话(Phone)
+          </view>
+          <view class="right">
+            {{phone}}
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="commona" style="color:#99A5AA;border-top:1px solid #D3D9DC">
+          <view class="left">
+            公司名(company Name)
+          </view>
+          <view class="right">
+            {{cm}}
+          </view>
+        </view>
+      </view>
+      <!-- 会议室 -->
+      <view class="commona" style="border-top:2px solid #EAF0F0">
+        <view class="left">会议室（Meeting Room）</view>
+        <view class="right">
+        </view>
+      </view>
+      <view>
+        <view class="commona" style="color:#99A5AA;border-top:1px solid #D3D9DC">
+          <view class="left">
+            {{gn}}
+          </view>
+          <view class="right">
+          </view>
+        </view>
+      </view>
+      <!-- 租期设定 -->
+      <view class="commona" style="border-top:2px solid #EAF0F0">
+        <view class="left">租期设定(Lease Term Setting)</view>
+        <view class="right">
+
+        </view>
+      </view>
+      <view>
+        <view class="commona" style="color:#99A5AA;border-top:1px solid #D3D9DC">
+          <view class="left">
+            预约开始时间(Start Time)
+          </view>
+          <view class="right">
+            {{kaitime}}
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="commona" style="color:#99A5AA;border-top:1px solid #D3D9DC">
+          <view class="left">
+            预约结束时间(End Time)
+          </view>
+          <view class="right">
+            {{guantime}}
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="commona" style="color:#99A5AA;border-top:1px solid #D3D9DC">
+          <view class="left">
+            延迟分钟(Delay Time)
+          </view>
+          <view class="right">
+            {{dytime}}
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="commona" style="color:#99A5AA;border-top:1px solid #D3D9DC">
+          <view class="left">
+            总共使用时长(Durtiom)
+          </view>
+          <view class="right">
+            {{zongtime}}
+          </view>
+        </view>
+      </view>
+      <!-- 状态 -->
+      <view class="commona" style="border-top:2px solid #EAF0F0;border:{{item.border}}">
+        <view class="left">状态(Status)</view>
+        <view class="right" style="color:{{item.color}}">
+          {{stat}}
+        </view>
+      </view>
+    </view>
+    <view class="common add">
+      <view class="addleft" bindtap="share">分享</view>
+      <!------------------- 延迟弹出层 ----------->
+      <view class="addcenter" bindtap="delay">延迟</view>
+      <!-- 取消弹出层 -->
+      <view class="addright" bindtap="cancel">取消</view>
+    </view>
+  </view>
+</view>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="viewa">提示信息：{{delaymsg}}</view>
+  <view bindtap="ok1" class="ok">好的</view>
+</view>
+
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{shm}}"></view>
+<view class="modalDlg" wx:if="{{shm}}">
+  <view class="viewa">提示信息：{{cancelmsg}}</view>
+  <view class="viewb">
+  <view bindtap="ok2" class="ok">返回订单</view>
+  <view bindtap="ok3" class="ok">留在原地</view></view>
+</view>

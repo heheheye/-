@@ -1,0 +1,69 @@
+.cb1-head {
+  display: flex;
+
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx
+}
+
+.cb1-head1 {
+  font-size: 40rpx;
+  margin-left: 10rpx
+}
+
+.cb1-head2 {
+  width: 2px;
+  background: black;
+  height: 60rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx
+}
+
+.cb1-head3 {
+  margin-left: 10rpx
+}
+
+/* 轮播图 */
+.swiperimage {
+  width: 100%;
+  height: 500rpx
+}
+
+/* 共享会议室 */
+.Sharedmeetingroom {
+  text-align: center;
+  font-size: 50rpx;
+  color: #F0B169;
+  border-bottom: 2px solid #F9F9F9;
+  height: 100rpx;
+  line-height: 100rpx
+}
+
+/* 主要内容 */
+.content-body2 {
+  border-top: 10rpx;
+}
+
+.cb2 {
+  display: flex;
+  padding-top: 30rpx
+}
+
+.cb2 image {
+  width: 260rpx;
+  height: 200rpx;
+  margin-left: 30rpx
+}
+
+.right {
+  margin-left: 30rpx
+}
+
+.right view {
+  
+  margin-top: 10rpx
+}
+.right :nth-child(1){font-size:40rpx}
+.right :nth-child(2){font-size: 30rpx;font-weight:bold}
+.right :nth-child(3){font-size: 26rpx;color:#BFC3C3}
+swiper{height:380rpx}

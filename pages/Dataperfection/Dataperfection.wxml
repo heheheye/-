@@ -1,0 +1,48 @@
+<view class="container">
+  <view class="content">
+    <!-- 页面顶部内容显示区 -->
+    <view class="content-body1">
+      <!-- 返回上一级 -->
+      <view class="backindex">
+        <navigator url="/pages/mine/mine" open-type="switchTab" hover-class="other-navigator-hover">
+          <image src="../../static/bottomicon/fanhui.png"></image>
+        </navigator>
+        <view>资料完善</view>
+      </view>
+    </view>
+    <view class="content-body2">
+      <form catchsubmit="formSubmit" catchreset="formReset">
+        <view class="cb2-body">
+          <view class="cb2-left">使用人姓名</view>
+          <view class="cb2-right"><input name="姓名" placeholder="{{name}}"></input></view>
+        </view>
+        <view class="cb2-body">
+          <view class="cb2-left">使用人手机</view>
+          <view class="cb2-right" >{{phone}}</view>
+        </view>
+        <view class="cb2-body">
+          <view class="cb2-left">负责人所属公司</view>
+          <view class="cb2-right">
+            <input type="text" name="公司"  placeholder="{{gongshi_name}}"></input>
+          </view>
+        </view>
+        <view class="cb2-body">
+          <view class="cb2-left">所属单元号</view>
+          <view class="cb2-right">
+            <input type="text" name="单元号" placeholder="{{danyuan}}"></input>
+          </view>
+        </view>
+        <view>
+          <button style="width:100vw" formType="submit" >
+            保存
+          </button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="viewa">提示信息：{{savemsg}}</view>
+  <view bindtap="ok" class="ok">好的</view>
+</view>
